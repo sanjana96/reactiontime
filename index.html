@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #game-area {
+            width: 100vw;
+            height: 100vh;
+            background-color: #202124;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.1s;
+        }
+        #instructions {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #result {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        #best-time {
+            font-size: 18px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-area">
+        <div id="instructions">Click to start. Click again when the color changes to yellow.</div>
+        <div id="result"></div>
+        <div id="best-time"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
